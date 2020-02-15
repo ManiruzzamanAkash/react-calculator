@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+/** Body **/
+
+body {
+    background: #FFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/** Body **/
+
+.calculatorArea {
+    margin: 50px 30px 0px 30px;
+    padding: 10px 0px 30px 10px;
+    background: #282828;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn {
+    border-radius: 10px;
+    box-shadow: 3px 4px 25px 0px #414141;
+    transition: .3s;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+    border-radius: 10px;
+    box-shadow: 2px 4px 7px -4px #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-bold {
+    font-weight: bold;
+}
+
+
+/** Header **/
+
+.resultArea {
+    background: #E6E6E6;
+    height: 80px;
+}
+
+
+/** Header **/
+
+
+/*** BODY ***/
+
+.calculator-body-part {
+    height: auto;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+.top-button {
+    background: #B082A9;
+    border: 1px solid #B082A9;
+    width: 19%;
+    margin: 0px 0px 0px 10px;
+}
+
+.top-button:hover {
+    background: #9A6F92;
+    border: 1px solid #9A6F92;
+}
+
+.btn-mem {
+    background: #8FBE8A;
+    border: 1px solid #8FBE8A;
+    width: 19%;
+    margin: 0px 0px 0px 10px;
+}
+
+.btn-mem:hover {
+    background: #6E9B6D;
+    border: 1px solid #6E9B6D;
+}
+
+.btn-digit-operation {
+    width: 15%;
+    margin: 0px 0px 0px 10px;
+}
+
+.btn-digit {
+    background: #758FB5;
+    border: 1px solid #758FB5;
+}
+
+.btn-digit:hover {
+    background: #85A2C9;
+    border: 1px solid #85A2C9;
+}
+
+.btn-operation {
+    background: #979797;
+    border: 1px solid #979797;
+}
+
+.btn-operation:hover {
+    background: #858585;
+    border: 1px solid #858585;
+}
+
+.btn-equal {
+    background: #BF6F69;
+    border: 1px solid #BF6F69;
+}
+
+.btn-equal:hover {
+    background: #AD655C;
+    border: 1px solid #AD655C;
+}
+
+
+/*** BODY ***/
+
+@media (min-width: 768px) {
+    .col-md-5 {
+        flex: 5 0 51.666667%;
+        max-width: 50.666667%;
+    }
 }
