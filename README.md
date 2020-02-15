@@ -10,8 +10,8 @@ A Calculator Using React JS
 [calculator-screenshot]: https://i.ibb.co/qrGc5vM/demo-look.png "A Calculator Using React JS"
 
 
-## Live Test
-<iframe src="https://maniruzzamanakash.github.io/react-calculator/" width="100%" height="600px"></iframe>
+## Live Test of React js Simple Calculator
+https://maniruzzamanakash.github.io/react-calculator
 
 ## Demo Look In Operation
  
