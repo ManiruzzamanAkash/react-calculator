@@ -15,10 +15,15 @@ state = {
     isResultInvalid: false
 }
 
-undoClick = () => {
-    console.log('undo something');
-}
+// undoClick = () => {
+//     console.log('undo something');
+// }
 
+/**
+ * digitClick
+ * @param { integer } digit
+ * @return { void } Click to digit and adds to full text
+ */
 digitClick = (digit) => {
     
     if(this.state.isResultClicked){
@@ -55,6 +60,10 @@ operationClick = (operationSign) =>{
     }
 }
 
+/**
+ * dotClick
+ * @return { void } Handle Dot click
+ */
 dotClick = () => {
     if(this.state.isResultClicked){
         this.setState({ fullText : "0.", resultText : '', isResultClicked: false});
@@ -66,6 +75,10 @@ dotClick = () => {
 }
 
 
+/**
+ * functionalButtonClick
+ * @return { void } Handle multiple events
+ */
 functionalButtonClick = (key) => {
     let { fullText, resultText } = this.state;
 
@@ -176,6 +189,10 @@ functionalButtonClick = (key) => {
     }
 }
 
+/**
+ * equalClick
+ * @return { void } Handle Equal click
+ */
 equalClick = () => {
     try {
         let finalResult = this.parseCalculate(this.state.fullText);
@@ -188,21 +205,22 @@ equalClick = () => {
     
 }
 
-getLastCharacter = (character) => {
-    if(isNaN(character)){
-        return this.getLastCharacter(character);
-    }else{
-       
-    }
-}
 
-
+/**
+ * parseCalculate
+ * @param { string } the full text for calculation
+ * @return { float } Final parsed result 
+ */
 parseCalculate = (fullText) => {
     let finalResult = 0;
     finalResult = Parser.evaluate(fullText);
     return finalResult;
 }
 
+/**
+ * checkKeyboardEvent
+ * @return { function } Check and make action if any keyboard is pressed
+ */
 checkKeyboardEvent = (event) => {
     if(event.key === "0" || event.key === "1" || event.key === "2" || event.key === "3" || event.key === "4" || event.key === "5" || event.key === "6" || event.key === "7" || event.key === "8" || event.key === "9") {
         this.digitClick(parseInt(event.key));
@@ -215,7 +233,6 @@ checkKeyboardEvent = (event) => {
     }else if(event.key === "Enter"){
         this.equalClick();
     }
-    console.log('event', event);
 }
 
 // Handle Key board event
@@ -223,12 +240,17 @@ componentDidMount(){
     document.addEventListener("keydown", this.checkKeyboardEvent, false);
     localStorage.setItem('CALC_M', localStorage.getItem('CALC_M') || "0");
 }
+
+// Remove Handle Key board event
 componentWillUnmount(){
     document.removeEventListener("keydown", this.checkKeyboardEvent, false);
 }
 
 
-   
+/**
+ * printResultTextCSS
+ * @return { string } css of result span
+ */
 printResultTextCSS = () => {
     let css = "resultArea ";
     let { fullText, resultText } = this.state;
