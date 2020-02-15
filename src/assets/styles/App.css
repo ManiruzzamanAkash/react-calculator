@@ -4,10 +4,29 @@ body {
     background: #FFF;
 }
 
+a {
+    color: #748eb3;
+    transition: .3s;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: 0px!important;
+}
+
+span.app-title {
+    font-size: 35px;
+    font-family: fantasy;
+    letter-spacing: 5px;
+    color: #748eb3;
+}
+
+.app-header {
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    letter-spacing: 4px;
 }
 
 
@@ -40,12 +59,29 @@ body {
 .resultArea {
     background: #E6E6E6;
     height: 80px;
-    font-size: 35px;
     font-weight: bold;
     color: #282828;
     text-align: right;
     padding-right: 40px;
     padding-top: 12px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.resultArea-md {
+    font-size: 35px;
+}
+
+.resultArea-sm {
+    font-size: 25px;
+}
+
+.resultArea-xsm {
+    font-size: 16px;
+}
+
+.resultArea-xxsm {
+    font-size: 10px;
 }
 
 
@@ -127,4 +163,9 @@ body {
         flex: 5 0 51.666667%;
         max-width: 50.666667%;
     }
+}
+
+p.copy-right {
+    color: #969696!important;
+    margin-right: 27px;
 }
