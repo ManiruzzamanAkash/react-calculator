@@ -40,6 +40,12 @@ body {
 .resultArea {
     background: #E6E6E6;
     height: 80px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #282828;
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 12px;
 }
 
 

@@ -14,7 +14,7 @@ class App extends React.Component {
                     
                     <div className="col-md-12 calculator-header-part">
                       <div className="resultArea">
-                        
+                        120 + 20 = 120
                       </div>
                     </div>
 
@@ -64,7 +64,7 @@ class App extends React.Component {
                               /
                           </button>
                           <button className="btn btn-primary btn-digit-operation btn-operation text-bold">
-                              R
+                              <i className="fa fa-check"></i>
                           </button>
                       </div>
 
