@@ -503,6 +503,7 @@ class AppView extends React.Component {
                 href="https://github.com/ManiruzzamanAkash"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Maniruzzaman Akash GitHub profile"
               >
                 Maniruzzaman Akash
               </a>
