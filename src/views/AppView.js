@@ -270,6 +270,8 @@ class AppView extends React.Component {
       this.functionalButtonClick("C");
     } else if (event.key === "Enter") {
       this.equalClick();
+    } else if (event.key === "Escape") {
+      this.functionalButtonClick("AC");
     }
   };
 
@@ -502,7 +504,7 @@ class AppView extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Maniruzzaman Akash{" "}
+                Maniruzzaman Akash
               </a>
             </p>
           </div>
