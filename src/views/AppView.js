@@ -497,7 +497,11 @@ class AppView extends React.Component {
 
             <p className="copy-right text-right">
               &copy; 2020,{" "}
-              <a href="https://github.com/ManiruzzamanAkash" target="_blank">
+              <a
+                href="https://github.com/ManiruzzamanAkash"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Maniruzzaman Akash{" "}
               </a>
             </p>
