@@ -47,7 +47,7 @@ class AppView extends React.Component {
 
   operationClick = (operationSign) => {
     let { fullText, resultText } = this.state;
-    console.log("resultText", resultText);
+
     if (resultText.length > 0) {
       this.setState({
         fullText: resultText + operationSign,
